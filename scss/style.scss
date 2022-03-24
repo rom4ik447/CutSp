@@ -28,6 +28,7 @@ body {
 
     @media (max-width: 768px) {
         flex-direction: column;
+        margin-bottom: 0;
     }
 
     img {
@@ -40,6 +41,10 @@ body {
 
         @media (max-width: 768px) {
             padding-left: 0;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
     }
 
@@ -51,14 +56,14 @@ body {
             margin: 0 12px;
         }
 
-        @media (max-width: 600px) {
-            font-size: 10px;
-            margin: 0 7px;
+        @media (max-width: 768px) {
+            font-size: 14px;
+            margin: 7px 0;
         }
 
         @media (max-width: 400px) {
-            font-size: 8px;
-            margin: 0 5px;
+            font-size: 12px;
+            margin: 5px 0;
         }
 
         &:last-of-type {
@@ -227,6 +232,9 @@ img {
 
     @media (max-width: 768px) {
         width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 0;
     }
 
     img {
@@ -237,8 +245,9 @@ img {
         }
 
         @media (max-width: 768px) {
-            width: 85%;
+            // width: 85%;
             margin-bottom: 5%;
+            margin-top: 5%;
         }
     }
 }
